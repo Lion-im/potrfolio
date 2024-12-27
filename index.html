@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style type="text/css">
+      @font-face{
+        font-family:SaarSPDemo;
+        src: url(SaarSPDemo.otf);
+      }
+      .SaarSPDemo{
+        font-family:SaarSPDemo;
+      }
+      .ava{
+        height: 250px;
+        width: 250px;
+        transition: 1s;
+      }
+      .ava:hover{
+        height: 260px;
+        width: 260px;
+        margin-left: 10px;
+      }
+      .githubPhoto{
+        height: 75px;
+        width: 75px;
+        transition: 1s;
+      }
+      .githubPhoto:hover{
+        height: 85px;
+        width: 85px;
+      }
+      .TextColour{
+        color: #000000;
+        transition: color 1s, font-size 3s, margin-left 2s, width 2s, height 2s;
+      }
+      .TextColour:hover{
+        color: #080d4f;
+        font-size: 18px;
+        margin-left: 25px;
+        width: 90%;
+      }
+      .overfall{
+        overflow: hidden;
+        width: 640px;
+      }
+      .BigImage{
+           width: 100%; 
+           height: 320px;
+           transition: 1s all ease-in-out;
+      }
+      .BigImage:hover{
+        transform: scale(1.1);
+      }
+      .TextColorBlack-blue{
+        color: #000000;
+        transition: 1s;
+      }
+      .TextColorBlack-blue:hover{
+        color: #080d4f;
+        transition: 1s;
+      } 
+      @media(max-width: 560px){
+        .BigImage{
+          width: 60%; height: 60%;
+        }
+        .githubPhoto{
+          width: 30%; height: 30%;
+        }
+        .avaPhoto{
+          width: 80%; height: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body style="background: #9ee7ff;" class="SaarSPDemo">
+    <div class="col-12 row col-lg-12" style="height: 950px">
+      <div class="col-12 col-lg-3" style="height: 950px">
+        <div class="col-10" style="height: 950px">
+          <div class="col-10 ms-auto" style="height: 950px">
+            <div class="col-10 rounded-pill py-3 TextColour text-center" style="height: 350px; background: #9effda;">
+              <h4 class="mb-0">Мой Никнейм mdms3</h4>
+              <img src="avatar.webp" class="mt-3 ava avaPhoto rounded-pill">
+            </div>
+            <div class="col-10 mt-5 TextColour text-center rounded-pill py-3" style="height: 125px; background: #9effda;">
+              <p>
+                Меня зовут Тамир, мой никнейм mdms3. Я занимаюсь программированием в сфере сайтов. Я учу html язык, работаю через bootstrap.
+              </p>
+            </div>
+            <div class="col-9 rounded-pill py-3 mt-5 TextColour" style="height: 150px; background: #9effda;">
+              <div class="d-flex">
+                <h4>Мои Умения:</h4>
+                  <div class="col-4 ms-auto">
+                    html язык
+                    boot strap
+                    Sublime text3
+                    figma.com
+                    front worker
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-5 gap-3 TextColour rounded-pill py-3" style="height: 125px; background: #9effda;">
+                <h4>Связаться со мной:</h4>
+                <div class="col-10 mx-auto" style="height: 75px; margin-top: 45px">
+                  <div>
+                    <a href="https://github.com/Lion-im"><img src="github.png" class="githubPhoto rounded-pill"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col-12 ms-lg-auto col-lg" style="height: 950px">
+        <div class="col-12" style="height: 750px">
+          <h3>Пример моих работ:</h3>
+          <div class="row">
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                
+          <div class="text-start text-center">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              Youtube
+            </button>
+
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Immortals Fenyx Rising</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Youtube хостинг</h4>
+                    <p>Премиум 13,99 $/месяц</p>
+                    <p> 14 февраля 2005</p>
+                    <p>видеохостинг, предоставляющий пользователям услуги хранения, доставки и показа видео. YouTube стал популярнейшим видеохостингом и вторым сайтом в мире по количеству посетителей.</p> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Добавить в корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class="overfall" class="overfall"><a href="https://lion-im.github.io/youtube/"><img class="BigImage" src="youtubePhoto.png"></a></div>
+              </div>
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">Terraria</h3>
+                <div class="overfall"><a href="https://lion-im.github.io/terraria/"><img src="terrariaPhoto.png" class="BigImage"></a></div>
+              </div>
+          </div>
+          <div class="row mt-lg-5">
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">Epic Store</h3>
+                <div class="overfall"><a href="https://lion-im.github.io/new/"><img src="epicPhoto.png" class="BigImage"></a></div>
+              </div>
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">Kino Poisk</h3>
+                <div class="overfall"><a href="https://lion-im.github.io/kinopoisk/"><img src="kinoPhoto.png" class="BigImage"></a></div>
+              </div>
+          </div>
+          <div class="row mt-lg-5">
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">камень ножницы бумага</h3>
+                <div class="overfall"><a href="https://lion-im.github.io/rock-paper-scissors/"><img src="Окак.png" class="BigImage"></a></div>
+              </div>
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">океан и бомбочки</h3>
+                <div class="overfall"><a href="https://lion-im.github.io/duck-game/"><img src="бомбапетарда.png" class="BigImage"></a></div>
+              </div>
+          </div>
+          <div class="row mt-lg-5">
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">морски бой</h3>
+                <div class="overfall"><a href="https://lion-im.github.io/morskibsttle/"><img src="морскибойэ.png" class="BigImage"></a></div>
+              </div>
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">кикстарт</h3>
+                <div class="overfall"><a href="https://github.com/Lion-im/kickstart"><img src="kickstart.png" class="BigImage"></a></div>
+              </div>
+          </div>
+          <div class="row mt-lg-5">
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">Инстраграмм</h3>
+                <div class="overfall"><a href="https://github.com/Lion-im/regitser"><img src="insta.png" class="BigImage"></a></div>
+              </div>
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">нетфликс</h3>
+                <div class="overfall"><a href="https://github.com/Lion-im/netfix2"><img src="netflix.png" class="BigImage"></a></div>
+              </div>
+          </div>
+          <div class="row mt-lg-5">
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">пицца</h3>
+                <div class="overfall"><a href="https://github.com/Lion-im/pizza"><img src="pizza.png" class="BigImage"></a></div>
+              </div>
+              <div class="rounded-5 col-12 col-lg" style="height: 360px; background: #cec0ff;">
+                <h3 class="text-center TextColorBlack-blue">твиттер</h3>
+                <div class="overfall"><a href="https://github.com/Lion-im/twitter"><img src="twitter.png" class="BigImage"></a></div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>
